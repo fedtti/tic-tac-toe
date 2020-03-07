@@ -1,0 +1,41 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Tic-Tac-Toe</title>
+    <link rel="prefetch stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="/css/main.css"> <!-- TODO: @fedtti -->
+  </head>
+  <body class="game">
+    <noscript>
+      <strong>We’re sorry, but <em>Tic-Tac-Toe</em> doesn’t work properly without JavaScript enabled. Please, enable it to continue.</strong>
+    </noscript>
+    <div class="game__wrap">
+      <header class="game__head">
+        <h1 class="game__head__name -text-italic">Tic-Tac-Toe</h1>
+        <p class="game__head__turn -text-bold -text-uppercase" id="player">Player 1</p>
+      </header>
+      <main class="game__main" id="board" tabindex="-1">
+        <div class="game__main__cell"></div>
+        <div class="game__main__cell"></div>
+        <div class="game__main__cell"></div>
+        <div class="game__main__cell"></div>
+        <div class="game__main__cell"></div>
+        <div class="game__main__cell"></div>
+        <div class="game__main__cell"></div>
+        <div class="game__main__cell"></div>
+        <div class="game__main__cell"></div>
+      </main>
+      <aside class="game__modal">
+        <!-- TODO: @fedtti -->
+        <button class="game__modal__reset -text-uppercase" id="reset">Reset</button>
+      </aside>
+      <footer class="game__foot">
+        <p class="game__foot__copy"><small class="-text-small">Copyright © 2020 <a class="game__foot__link -text-bold" href="https://federicomoretti.it/" rel="noopener noreferrer" target="_blank">Federico Moretti</a>. All rights reserved.</small></p>
+      </footer>
+    </div>
+    <script src="/js/main.js"></script> <!-- TODO: @fedtti -->
+  </body>
+</html>

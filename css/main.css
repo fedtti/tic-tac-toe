@@ -1,0 +1,131 @@
+@charset "UTF-8";
+/**
+ * Import “Sansita” and “Source Sans Pro” from Google Fonts.
+ */
+@import url("https://fonts.googleapis.com/css2?family=Sansita:ital,wght@1,900&family=Source+Sans+Pro:wght@400;700&display=swap");
+/**
+ * Set global Sass variables.
+ */
+/**
+ * Set global CSS variables.
+ */
+:root {
+  --background-color: #fff;
+  --foreground-color: #000;
+  --highlights-color: #b00020;
+}
+
+/**
+ * Set alternate CSS variables.
+ */
+[data-theme=dark] {
+  --background-color: #000;
+  --foreground-color: #fff;
+  --highlights-color: #2196f3;
+}
+
+* {
+  outline: 0;
+}
+
+.game {
+  background: var(--background-color);
+  color: var(--foreground-color);
+  font: 400 1rem/1 "Source Sans Pro", sans-serif;
+  /* Header */
+  /* Main */
+  /* Modal */
+  /* Footer */
+}
+.game__wrap {
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+}
+.game__head {
+  margin: 0 auto;
+  order: 1;
+  padding: 1rem;
+  text-align: center;
+  width: calc(100% - 2rem);
+}
+.game__head__name {
+  font-family: "Sansita", sans-serif;
+  font-size: 150%;
+  font-weight: 900;
+  margin: 0;
+}
+.game__head__turn {
+  color: var(--highlights-color);
+  margin: 1rem auto 0 auto;
+}
+.game__main {
+  background: var(--foreground-color);
+  display: inline-flex;
+  flex-flow: row wrap;
+  height: 9.5rem;
+  margin: 0 auto;
+  order: 2;
+  text-align: center;
+  width: 9.5rem;
+}
+.game__main__cell {
+  background: var(--background-color);
+  height: 3rem;
+  margin: 0 0.25rem 0.25rem 0;
+  width: 3rem;
+}
+.game__main__cell:active, .game__main__cell:focus, .game__main__cell:hover {
+  cursor: pointer;
+}
+.game__main__cell:nth-child(3), .game__main__cell:nth-child(6) {
+  margin: 0 0 0.25rem 0;
+}
+.game__main__cell:nth-child(7), .game__main__cell:nth-child(8) {
+  margin: 0 0.25rem 0 0;
+}
+.game__main__cell:nth-child(9) {
+  margin: 0;
+}
+.game__modal {
+  display: none;
+  position: absolute;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  width: 100vw;
+}
+.game__foot {
+  margin: 0 auto;
+  order: 3;
+  padding: 1rem;
+  text-align: center;
+  width: calc(100% - 2rem);
+}
+.game__foot__copy {
+  line-height: 1.5;
+  margin: 0;
+}
+.game__foot__link {
+  color: var(--highlights-color);
+  text-decoration: none;
+}
+
+/**
+ * Set chainable BEM modifiers (cfr. https://webuild.envato.com/blog/chainable-bem-modifiers/).
+ */
+.-text-small {
+  font-size: 87.5%;
+}
+
+.-text-bold {
+  font-weight: 700;
+}
+
+.-text-italic {
+  font-style: italic;
+}
+
+.-text-uppercase {
+  text-transform: uppercase;
+}
